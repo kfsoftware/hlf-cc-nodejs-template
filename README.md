@@ -32,13 +32,11 @@ You can also use any IDE like vscode or WebStorm to debug the chaincode.
 
 Every time you start the tunnel, you must restart the chaincode as the certificates and package id will change.
 
-
 ### Test chaincode
-
 
 You can go to the playground(instead of /graphql, use /playground) and use the following mutation and query to test the chaincode:
 
-```bash
+```graphql
 mutation invoke {
   invokeChaincode(input:{
     chaincodeName:"template_node"
