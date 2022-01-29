@@ -1,0 +1,34 @@
+{
+  "name": "hlf-cc-nodejs-template",
+  "version": "1.0.0",
+  "description": "template for node.js typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:w": "tsc --watch",
+    "start": "tsc && fabric-chaincode-node start",
+    "postinstall": "tsc",
+    "start:dev": "dotenv -e .env fabric-chaincode-node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfsoftware/hlf-cc-nodejs-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/kfsoftware/hlf-cc-nodejs-template/issues"
+  },
+  "homepage": "https://github.com/kfsoftware/hlf-cc-nodejs-template",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "dotenv-cli": "^4.1.1",
+    "fabric-contract-api": "^2.2.2",
+    "fabric-shim": "^2.2.2",
+    "json-stringify-deterministic": "^1.0.2",
+    "sort-keys-recursive": "^2.1.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
