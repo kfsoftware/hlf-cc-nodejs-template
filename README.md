@@ -23,9 +23,9 @@ hlf-cc-dev start --localChaincode="localhost:9999" \
 ### Start chaincode
 
 ```bash
-npm run build:w # in another terminal
 npm i # install dependencies
-source .env && npm run start:dev
+npm run build:w # in another terminal
+npm run start:dev
 ```
 
 You can also use any IDE like vscode or WebStorm to debug the chaincode.
